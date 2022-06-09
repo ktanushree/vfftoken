@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Prisma SDWAN script to generate VFF license
+Prisma SDWAN script to generate VFF Tokens
 tkamath@paloaltonetworks.com
 """
 import sys
@@ -8,7 +8,7 @@ import os
 import argparse
 import cloudgenix
 
-SCRIPT_NAME = "Generate VFF License"
+SCRIPT_NAME = "Generate VFF Tokens"
 SCRIPT_VERSION = "v1.0"
 
 
