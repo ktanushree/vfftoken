@@ -34,23 +34,23 @@ generate_token.py can be used to generate tokens using login credentials or an A
 #### PRISMA SASE 
 1. Generate one single use token for a single child tenant
 ```
-./generate_token.py -CI "client_id" -CS "client_secret" -CT "master_tsg_id" -M 3102 -T "child_tsg_id" -N 1 -U single
+./generate_token_sase.py -CI "client_id" -CS "client_secret" -CT "master_tsg_id" -M 3102 -T "child_tsg_id" -N 1 -U single
 ```
 2. Generate 10 single use token for a single child tenant
 ```
-./generate_token.py -CI "client_id" -CS "client_secret" -CT "master_tsg_id" -M 3102 -T "child_tsg_id" -N 10 -U single
+./generate_token_sase.py -CI "client_id" -CS "client_secret" -CT "master_tsg_id" -M 3102 -T "child_tsg_id" -N 10 -U single
 ```
 3. Generate 1 multi use token for a single child tenant
 ```
-./generate_token.py -CI "client_id" -CS "client_secret" -CT "master_tsg_id" -M 3102 -T "child_tsg_id" -N 1 -U multi
+./generate_token_sase.py -CI "client_id" -CS "client_secret" -CT "master_tsg_id" -M 3102 -T "child_tsg_id" -N 1 -U multi
 ```
 4. Generate 10 multi use token for a single child tenant
 ```
-./generate_token.py -CI "client_id" -CS "client_secret" -CT "master_tsg_id" -M 3102 -T "child_tsg_id" -N 10 -U multi
+./generate_token_sase.py -CI "client_id" -CS "client_secret" -CT "master_tsg_id" -M 3102 -T "child_tsg_id" -N 10 -U multi
 ```
 5. Generate 1 multi use token for each child tenants via a CSV file
 ```
-./generate_token.py -CI "client_id" -CS "client_secret" -CT "master_tsg_id" -M 3102 -F tsg_ids.csv -N 1 -U multi
+./generate_token_sase.py -CI "client_id" -CS "client_secret" -CT "master_tsg_id" -M 3102 -F tsg_ids.csv -N 1 -U multi
 ```
 
 ### Help Text:
