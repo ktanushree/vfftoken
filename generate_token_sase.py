@@ -122,7 +122,7 @@ def go():
     # Config Settings
     config_group = parser.add_argument_group('Config', 'These options are to provide VFF license parameters')
     config_group.add_argument("--model_name", "-M",
-                              help="Choose the ION model for license generation. Allowed values: 3102, 3104",
+                              help="Choose the ION model for license generation. Allowed values: 3102, 3104, 3108, 7108, 7116",
                               default="3102")
     config_group.add_argument("--use", "-U", help="Single or Multi use token. Allowed values: single or multi",
                               default="multi")
@@ -164,8 +164,8 @@ def go():
     else:
         multiuse = "true"
 
-    if model_name not in ["3102", "3104"]:
-        print("ERR: Invalid model_name. Please choose from: 3102, 3104")
+    if model_name not in ["3102", "3104", "3108", "7108", "7116"]:
+        print("ERR: Invalid model_name. Please choose from: 3102, 3104, 3108, 7108, 7116")
         sys.exit()
 
     client_id = client_secret = client_tsg = None
